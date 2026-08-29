@@ -26,15 +26,6 @@ jobs:
       - run: npm run publish:metadata
         env:
           LILKA_MARKETPLACE_ED25519_PRIVATE_KEY: ${{ secrets.LILKA_MARKETPLACE_ED25519_PRIVATE_KEY }}
-      - run: |
-          git config user.name "lilka-marketplace[bot]"
-          git config user.email "lilka-marketplace[bot]@users.noreply.github.com"
-          printf '%s' "$LILKA_MARKETPLACE_GIT_SIGNING_KEY" > "$RUNNER_TEMP/signing-key"
-          chmod 600 "$RUNNER_TEMP/signing-key"
-          git config gpg.format ssh
-          git config user.signingkey "$RUNNER_TEMP/signing-key"
-          git add catalog metadata
-          git diff --cached --quiet || git commit -S -m "chore(catalog): publish signed metadata"
-          git push
+      - run: node scripts/publish-commit.mjs
         env:
-          LILKA_MARKETPLACE_GIT_SIGNING_KEY: ${{ secrets.LILKA_MARKETPLACE_GIT_SIGNING_KEY }}
+          LILKA_MARKETPLACE_APP_TOKEN: ${{ steps.app-token.outputs.token }}
