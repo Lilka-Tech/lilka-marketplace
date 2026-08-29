@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "1970-01-01T00:00:00.000Z",
-  "version": 1,
-  "commit": "0000000000000000000000000000000000000000",
+  "generatedAt": "2026-08-29T15:18:03.740Z",
+  "version": 5,
+  "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
   "entries": [
     {
       "id": "general-assistant",
@@ -11,7 +11,7 @@
       "type": "agent",
       "repository": "Lilka-Tech/lilka-marketplace",
       "path": "packages/free/agents/general-assistant",
-      "commit": "0000000000000000000000000000000000000000",
+      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
       "digest": "sha256:53790f224152d808e3bbf82c181129b5bb5e0e131e986207f5d3a7ae1a3efbbc",
       "version": "1.0.0",
       "downloads": 0,
