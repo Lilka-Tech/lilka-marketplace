@@ -1,0 +1,91 @@
+{
+  "manifestVersion": "1.0",
+  "semver": "1.0.0",
+  "type": "agency",
+  "entrypoint": {
+    "kind": "agency",
+    "name": "Task Development"
+  },
+  "exportedAt": "2024-01-01T00:00:00.000Z",
+  "agency": {
+    "name": "Task Development",
+    "description": "A context-first delivery workflow with planning, implementation, and a review gate that returns inconsistencies to planning.",
+    "outputFormat": "md",
+    "steps": [
+      {
+        "name": "Gather Context",
+        "description": "Build an evidence inventory from the user request, available memories, project workspace and repositories, MCPs, skills, commands, and prior task context. Separate confirmed facts from assumptions and state unavailable sources.",
+        "order": 0,
+        "maxRetries": 2,
+        "numberOfReexecutions": null,
+        "nextStepRefs": [
+          "Plan Implementation"
+        ],
+        "returnToStepRef": null,
+        "parentRef": null,
+        "agentRef": "Task Development Agent",
+        "subAgency": null,
+        "parallelChildren": []
+      },
+      {
+        "name": "Plan Implementation",
+        "description": "Turn the evidence inventory into a concise, tangible change plan. Identify exactly where and what will change, including non-code artifacts, dependencies, acceptance checks, risks, and any decision that needs resolution before implementation.",
+        "order": 1,
+        "maxRetries": 3,
+        "numberOfReexecutions": null,
+        "nextStepRefs": [
+          "Implement Plan"
+        ],
+        "returnToStepRef": null,
+        "parentRef": null,
+        "agentRef": "Task Development Agent",
+        "subAgency": null,
+        "parallelChildren": []
+      },
+      {
+        "name": "Implement Plan",
+        "description": "Execute the agreed plan. Make the required tangible changes, preserve established conventions, run proportionate validation, and hand off the implementation evidence to review.",
+        "order": 2,
+        "maxRetries": 2,
+        "numberOfReexecutions": null,
+        "nextStepRefs": [
+          "Review Delivery"
+        ],
+        "returnToStepRef": null,
+        "parentRef": null,
+        "agentRef": "Task Development Agent",
+        "subAgency": null,
+        "parallelChildren": []
+      },
+      {
+        "name": "Review Delivery",
+        "description": "Act as the quality gate. Review the implementation against the original request, collected context, approved plan, project agreements, existing patterns, and relevant good practices. Return JSON only: {\"status\":\"approved\"|\"changes_required\",\"feedback\":\"specific findings and required plan changes\"}.",
+        "order": 3,
+        "maxRetries": 2,
+        "numberOfReexecutions": null,
+        "returnToStepRef": "Plan Implementation",
+        "parentRef": null,
+        "agentRef": "Task Development Agent",
+        "stepKind": "quality_gate",
+        "subAgency": null,
+        "parallelChildren": []
+      }
+    ]
+  },
+  "agents": [
+    {
+      "name": "Task Development Agent",
+      "description": "An implementation agent that builds an evidence-backed plan, executes it, and reviews the result before delivery.",
+      "systemPrompt": "You are the Task Development Agent in a Lilka agency. Deliver tangible, reviewable changes with an explicit evidence trail.\n\nYou will receive the original user request and the outputs of earlier agency steps. Work only within the current project and the capabilities that are actually available to you.\n\nFor context gathering, inspect the user request, relevant project and agent memories, repository/workspace state, available MCPs, skills, commands, and prior task output. Distinguish confirmed evidence from assumptions. Never invent access to a repository, MCP, memory, or external system.\n\nFor planning, identify the concrete surfaces to change: code, configuration, documentation, records, commands, or another tangible artifact. State the intended outcome, affected files or resources, dependencies, validation, and risks. Do not implement during this step.\n\nFor implementation, follow the approved plan, make the narrowest coherent change, and report exactly what changed plus the validation performed. If the plan is incomplete, return it to planning with the specific gap.\n\nFor review, compare the implementation against the original request, gathered context, plan, existing conventions, repository agreements, and relevant good practices. Return JSON only: {\"status\":\"approved\"|\"changes_required\",\"feedback\":\"...\"}. Approve only with sufficient evidence. When changes are required, make the feedback concrete enough for planning to revise the plan.\n\nUse the agency handoff tools to route normal steps forward. Do not claim a successful implementation or review without checking the available evidence.",
+      "temperature": 0.25,
+      "topP": 0.9,
+      "presencePenalty": null,
+      "frequencyPenalty": 0,
+      "modelRef": null,
+      "toolRefs": [],
+      "skillRefs": []
+    }
+  ],
+  "skills": [],
+  "commands": []
+}

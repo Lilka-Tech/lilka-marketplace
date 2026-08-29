@@ -1,0 +1,53 @@
+{
+  "type": "iconTheme",
+  "version": "1.0.0",
+  "marketplaceId": null,
+  "name": "Lilka Default Icons",
+  "description": "Default Lilka file icon theme.",
+  "definition": {
+    "file": "file",
+    "folder": "folder",
+    "folderExpanded": "folderOpen",
+    "fileExtensions": {
+      "css": "css",
+      "html": "html",
+      "js": "javascript",
+      "json": "json",
+      "jsx": "react",
+      "md": "markdown",
+      "ts": "typescript",
+      "tsx": "react"
+    },
+    "fileNames": {
+      "package.json": "package",
+      "tsconfig.json": "typescript",
+      "vite.config.ts": "vite"
+    },
+    "folderNames": {
+      "node_modules": "dependencyFolder",
+      "src": "sourceFolder",
+      "test": "testFolder",
+      "tests": "testFolder"
+    },
+    "folderNamesExpanded": {
+      "node_modules": "dependencyFolderOpen",
+      "src": "sourceFolderOpen",
+      "test": "testFolderOpen",
+      "tests": "testFolderOpen"
+    },
+    "languageIds": {
+      "css": "css",
+      "html": "html",
+      "javascript": "javascript",
+      "json": "json",
+      "markdown": "markdown",
+      "typescript": "typescript"
+    }
+  },
+  "assets": {},
+  "fallback": {
+    "file": "file",
+    "folder": "folder",
+    "folderOpen": "folderOpen"
+  }
+}

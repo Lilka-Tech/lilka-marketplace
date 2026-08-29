@@ -6,7 +6,16 @@ if (!token) throw new Error('LILKA_MARKETPLACE_APP_TOKEN is required');
 if (!expectedHeadOid) throw new Error('GITHUB_SHA is required');
 
 const additions = await Promise.all(
-  ['metadata/root.json', 'metadata/snapshot.json', 'metadata/timestamp.json'].map(async (path) => ({
+  [
+    'catalog/index.json',
+    'catalog/agents.json',
+    'catalog/agencies.json',
+    'catalog/skills.json',
+    'catalog/appearances.json',
+    'metadata/root.json',
+    'metadata/snapshot.json',
+    'metadata/timestamp.json',
+  ].map(async (path) => ({
     path,
     contents: (await readFile(path)).toString('base64'),
   })),

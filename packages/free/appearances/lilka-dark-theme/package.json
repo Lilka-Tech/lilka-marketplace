@@ -1,0 +1,84 @@
+{
+  "type": "theme",
+  "version": "1.0.0",
+  "marketplaceId": null,
+  "name": "Solarized",
+  "description": "Solarized Lilka appearance theme with a warm dark surface and violet accents.",
+  "tokens": {
+    "--lk-bg": "#282a36",
+    "--lk-bg-2": "#2c2e3b",
+    "--lk-bg-3": "#303241",
+    "--lk-panel": "#303241",
+    "--lk-border": "#44475a",
+    "--lk-border-strong": "#646775",
+    "--lk-fg": "#f8f8f2",
+    "--lk-fg-2": "#cacbc9",
+    "--lk-fg-3": "#a1a1a3",
+    "--lk-fg-4": "#7f8185",
+    "--lk-accent": "#bd93f9",
+    "--lk-accent-2": "#c5a1f8",
+    "--lk-accent-soft": "#494161",
+    "--lk-ok": "#50fa7b",
+    "--lk-run": "#f1fa8c",
+    "--lk-err": "#ff5555",
+    "--lk-info": "#8be9fd"
+  },
+  "background": {
+    "type": "color",
+    "value": "#282a36",
+    "image": null,
+    "texture": null,
+    "opacity": 1,
+    "fit": "cover",
+    "repeat": "no-repeat",
+    "position": "center"
+  },
+  "ui": {
+    "surface": {
+      "app": "#282a36",
+      "panel": "#303241",
+      "sidebar": "#2c2e3b",
+      "popover": "#303241"
+    },
+    "highlight": {
+      "selection": "#494161",
+      "focusRing": "#bd93f9",
+      "hover": "#383a49",
+      "active": "#44475a"
+    },
+    "semantic": {
+      "success": "#50fa7b",
+      "warning": "#f1fa8c",
+      "danger": "#ff5555",
+      "info": "#8be9fd"
+    }
+  },
+  "editor": {
+    "source": "lilka",
+    "compatibility": {
+      "vscodeTheme": true,
+      "openVsx": true
+    },
+    "colors": {
+      "editor.background": "#282a36",
+      "editor.foreground": "#f8f8f2",
+      "editor.selectionBackground": "#44475a",
+      "editor.lineHighlightBackground": "#303241",
+      "editorCursor.foreground": "#f8f8f2"
+    },
+    "tokenColors": [],
+    "codeSpace": {
+      "gutter": "#2c2e3b",
+      "activeLine": "#303241",
+      "changedLine": "#f1fa8c",
+      "addedLine": "#50fa7b",
+      "deletedLine": "#ff5555",
+      "searchMatch": "#bd93f9"
+    }
+  },
+  "preview": {
+    "background": "#282a36",
+    "foreground": "#f8f8f2",
+    "accent": "#bd93f9"
+  }
+}

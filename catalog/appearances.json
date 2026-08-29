@@ -1,1 +1,97 @@
-{"schemaVersion":1,"generatedAt":"1970-01-01T00:00:00.000Z","version":1,"commit":"0000000000000000000000000000000000000000","entries":[]}
+{
+  "schemaVersion": 1,
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "version": 1,
+  "commit": "0000000000000000000000000000000000000000",
+  "entries": [
+    {
+      "id": "lilka-default-theme",
+      "name": "Lilka Default",
+      "description": "Default Lilka appearance theme with its complete background configuration.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-default-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:926576f2c3417051c19ceda5fa627284ca08abb1a58264765aabc782e8d85794",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "dark"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-dark-theme",
+      "name": "Solarized",
+      "description": "Warm dark theme with violet accents and complete background configuration.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-dark-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:32113321f026621c6e41a69ba9a505f4f9c8d9afacc5387627bcd21cb7211121",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "dark"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-light-theme",
+      "name": "Lilka Light",
+      "description": "Light neutral theme with complete background configuration.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-light-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:243389e2858ddfdf1dda4a8fa089823f0893acd9bafd0c4c3e4c50dc3fb9a16e",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "light"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-medium-light-theme",
+      "name": "Lilka Medium Light",
+      "description": "Medium-light gray theme with complete background configuration.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-medium-light-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:8f52028269db37aec81e6595298244e09619d78300e2dcb135e17331e1b19185",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "light"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-default-icons",
+      "name": "Lilka Default Icons",
+      "description": "Default Lilka file icon theme.",
+      "type": "iconTheme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-default-icons",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:4cd9351f20b7d4af4196c18ca27ad6f3d0194fd5b797cc3f430e8f0dd4c12c64",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "icons"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    }
+  ]
+}

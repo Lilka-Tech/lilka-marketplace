@@ -1,0 +1,85 @@
+{
+  "type": "theme",
+  "version": "1.0.0",
+  "marketplaceId": null,
+  "name": "Lilka Default",
+  "description": "Default Lilka appearance theme — deep charcoal surfaces, crisp zinc borders, and a vivid blue accent.",
+  "tokens": {
+    "--lk-bg": "#121214",
+    "--lk-bg-2": "#18181b",
+    "--lk-bg-3": "#222226",
+    "--lk-panel": "#18181b",
+    "--lk-border": "#333338",
+    "--lk-border-strong": "#4a4a50",
+    "--lk-fg": "#f4f4f5",
+    "--lk-fg-2": "#b4b4b8",
+    "--lk-fg-3": "#88888f",
+    "--lk-fg-4": "#5c5c62",
+    "--lk-accent": "#0070f3",
+    "--lk-accent-2": "#3b9eff",
+    "--lk-accent-soft": "#0a1f38",
+    "--lk-ok": "#22c55e",
+    "--lk-run": "#eab308",
+    "--lk-err": "#ef4444",
+    "--lk-info": "#38bdf8"
+  },
+  "background": {
+    "type": "color",
+    "value": "#121214",
+    "image": null,
+    "texture": null,
+    "opacity": 1,
+    "fit": "cover",
+    "repeat": "no-repeat",
+    "position": "center"
+  },
+  "ui": {
+    "surface": {
+      "app": "#121214",
+      "panel": "#18181b",
+      "sidebar": "#18181b",
+      "popover": "#222226"
+    },
+    "highlight": {
+      "selection": "#1a3352",
+      "focusRing": "#0070f3",
+      "hover": "#1f1f23",
+      "active": "#333338"
+    },
+    "semantic": {
+      "success": "#22c55e",
+      "warning": "#eab308",
+      "danger": "#ef4444",
+      "info": "#38bdf8"
+    }
+  },
+  "editor": {
+    "source": "lilka",
+    "compatibility": {
+      "vscodeTheme": true,
+      "openVsx": true
+    },
+    "colors": {
+      "editor.background": "#18181b",
+      "editor.foreground": "#e8e8ea",
+      "editor.selectionBackground": "#1e4976",
+      "editor.lineHighlightBackground": "#1f1f23",
+      "editorCursor.foreground": "#f4f4f5",
+      "editor.findMatchBackground": "#0070f3"
+    },
+    "tokenColors": [],
+    "codeSpace": {
+      "gutter": "#18181b",
+      "activeLine": "#1f1f23",
+      "changedLine": "#eab308",
+      "addedLine": "#22c55e",
+      "deletedLine": "#ef4444",
+      "searchMatch": "#0070f3"
+    }
+  },
+  "preview": {
+    "background": "#121214",
+    "foreground": "#f4f4f5",
+    "accent": "#0070f3"
+  }
+}

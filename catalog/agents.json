@@ -1,1 +1,26 @@
-{"schemaVersion":1,"generatedAt":"1970-01-01T00:00:00.000Z","version":1,"commit":"0000000000000000000000000000000000000000","entries":[]}
+{
+  "schemaVersion": 1,
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "version": 1,
+  "commit": "0000000000000000000000000000000000000000",
+  "entries": [
+    {
+      "id": "general-assistant",
+      "name": "General Assistant",
+      "description": "A versatile assistant for planning, writing, analysis, and structured deliverables.",
+      "type": "agent",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/agents/general-assistant",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:53790f224152d808e3bbf82c181129b5bb5e0e131e986207f5d3a7ae1a3efbbc",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "starter",
+        "general",
+        "assistant"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "type": "theme",
+  "version": "1.0.0",
+  "marketplaceId": null,
+  "name": "Lilka Medium Light",
+  "description": "Medium-light Lilka appearance theme built from calm gray surfaces and graphite accents.",
+  "tokens": {
+    "--lk-bg": "#dfe1e5",
+    "--lk-bg-2": "#d5d8dd",
+    "--lk-bg-3": "#c9cdd3",
+    "--lk-panel": "#e9eaed",
+    "--lk-border": "#b8bdc5",
+    "--lk-border-strong": "#9da3ad",
+    "--lk-fg": "#202226",
+    "--lk-fg-2": "#3f4349",
+    "--lk-fg-3": "#575c64",
+    "--lk-fg-4": "#5d636b",
+    "--lk-accent": "#4b5563",
+    "--lk-accent-2": "#374151",
+    "--lk-accent-soft": "#c4c9d0",
+    "--lk-ok": "#26734d",
+    "--lk-run": "#8a5d00",
+    "--lk-err": "#b52f2a",
+    "--lk-info": "#26657a"
+  },
+  "background": {
+    "type": "color",
+    "value": "#dfe1e5",
+    "image": null,
+    "texture": null,
+    "opacity": 1,
+    "fit": "cover",
+    "repeat": "no-repeat",
+    "position": "center"
+  },
+  "ui": {
+    "surface": {
+      "app": "#dfe1e5",
+      "panel": "#e9eaed",
+      "sidebar": "#d5d8dd",
+      "popover": "#e9eaed"
+    },
+    "highlight": {
+      "selection": "#c4c9d0",
+      "focusRing": "#4b5563",
+      "hover": "#d0d3d8",
+      "active": "#c5c9cf"
+    },
+    "semantic": {
+      "success": "#26734d",
+      "warning": "#8a5d00",
+      "danger": "#b52f2a",
+      "info": "#26657a"
+    }
+  },
+  "editor": {
+    "source": "lilka",
+    "compatibility": {
+      "vscodeTheme": true,
+      "openVsx": true
+    },
+    "colors": {
+      "editor.background": "#e3e5e8",
+      "editor.foreground": "#202226",
+      "editor.selectionBackground": "#b9c0c9",
+      "editor.lineHighlightBackground": "#d5d8dd",
+      "editorCursor.foreground": "#374151",
+      "editor.findMatchBackground": "#aeb6c0"
+    },
+    "tokenColors": [],
+    "codeSpace": {
+      "gutter": "#d5d8dd",
+      "activeLine": "#d0d3d8",
+      "changedLine": "#8a5d00",
+      "addedLine": "#26734d",
+      "deletedLine": "#b52f2a",
+      "searchMatch": "#4b5563"
+    }
+  },
+  "preview": {
+    "background": "#dfe1e5",
+    "foreground": "#202226",
+    "accent": "#4b5563"
+  }
+}
