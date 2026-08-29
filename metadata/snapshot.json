@@ -1,0 +1,36 @@
+{
+  "signed": {
+    "schemaVersion": 1,
+    "version": 4,
+    "expiresAt": "2026-09-28T14:44:25.504Z",
+    "catalogs": {
+      "index": {
+        "sha256": "cf68a9ef471425649127fec17180aeb047a09d2fe99c9484340f0e66c74e9660",
+        "version": 1
+      },
+      "agents": {
+        "sha256": "cf68a9ef471425649127fec17180aeb047a09d2fe99c9484340f0e66c74e9660",
+        "version": 1
+      },
+      "agencies": {
+        "sha256": "cf68a9ef471425649127fec17180aeb047a09d2fe99c9484340f0e66c74e9660",
+        "version": 1
+      },
+      "skills": {
+        "sha256": "cf68a9ef471425649127fec17180aeb047a09d2fe99c9484340f0e66c74e9660",
+        "version": 1
+      },
+      "appearances": {
+        "sha256": "cf68a9ef471425649127fec17180aeb047a09d2fe99c9484340f0e66c74e9660",
+        "version": 1
+      }
+    }
+  },
+  "signatures": [
+    {
+      "keyid": "root-1",
+      "algorithm": "EdDSA",
+      "signature": "VNQwlZq8nNbpZSspFGysDSk0SbejecA7Q17DMyXNaVwu17u2IwxhELPR22p2bOFD6Qq7u1IuDJSd__AMDlCOCQ"
+    }
+  ]
+}
