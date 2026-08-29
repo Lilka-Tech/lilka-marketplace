@@ -1,0 +1,1 @@
+{"name":"@lilka/marketplace","private":true,"type":"module","scripts":{"validate":"node scripts/validate.mjs","publish:metadata":"node scripts/publish-metadata.mjs"}}
