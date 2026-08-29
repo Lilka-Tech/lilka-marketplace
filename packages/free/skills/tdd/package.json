@@ -1,0 +1,18 @@
+{
+  "type": "skill",
+  "version": "1.0.0",
+  "name": "tdd",
+  "description": "Popular skill tdd",
+  "license": "MIT",
+  "source": {
+    "repository": "mattpocock/skills",
+    "commit": "6654f6b60cd9d5be8b54c6fafe44346dabeb3b76",
+    "path": "skills/engineering/tdd/SKILL.md"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "content": "zsh:1: no matches found: repos/mattpocock/skills/contents/skills/engineering/tdd/SKILL.md?ref=6654f6b60cd9d5be8b54c6fafe44346dabeb3b76\n"
+    }
+  ]
+}

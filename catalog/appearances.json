@@ -5,27 +5,45 @@
   "commit": "0000000000000000000000000000000000000000",
   "entries": [
     {
-      "id": "lilka-default-theme",
-      "name": "Lilka Default",
-      "description": "Default Lilka appearance theme with its complete background configuration.",
+      "id": "catppuccin-mocha",
+      "name": "Catppuccin Mocha",
+      "description": "The popular Catppuccin Mocha palette adapted for Lilka.",
       "type": "theme",
       "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/appearances/lilka-default-theme",
+      "path": "packages/free/appearances/catppuccin-mocha",
       "commit": "0000000000000000000000000000000000000000",
-      "digest": "sha256:926576f2c3417051c19ceda5fa627284ca08abb1a58264765aabc782e8d85794",
+      "digest": "sha256:a95b7dbaf75bff8d548ee4595e7a8bdc08435b75b75d8cd506c9ae6004120d39",
       "version": "1.0.0",
-      "downloads": 0,
+      "downloads": 2247,
       "tags": [
-        "lilka",
         "theme",
-        "dark"
+        "dark",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "dracula",
+      "name": "Dracula",
+      "description": "The popular Dracula dark palette adapted for Lilka.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/dracula",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:fcdb5eddfe07db9a0a6776a99731ee1c1d9d2401d2b62f06054c44ac07d2e325",
+      "version": "1.0.0",
+      "downloads": 880,
+      "tags": [
+        "theme",
+        "dark",
+        "popular"
       ],
       "publishedAt": "2026-08-29T00:00:00.000Z"
     },
     {
       "id": "lilka-dark-theme",
       "name": "Solarized",
-      "description": "Warm dark theme with violet accents and complete background configuration.",
+      "description": "Solarized Lilka appearance theme with a warm dark surface and violet accents.",
       "type": "theme",
       "repository": "Lilka-Tech/lilka-marketplace",
       "path": "packages/free/appearances/lilka-dark-theme",
@@ -37,42 +55,6 @@
         "lilka",
         "theme",
         "dark"
-      ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
-    },
-    {
-      "id": "lilka-light-theme",
-      "name": "Lilka Light",
-      "description": "Light neutral theme with complete background configuration.",
-      "type": "theme",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/appearances/lilka-light-theme",
-      "commit": "0000000000000000000000000000000000000000",
-      "digest": "sha256:243389e2858ddfdf1dda4a8fa089823f0893acd9bafd0c4c3e4c50dc3fb9a16e",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [
-        "lilka",
-        "theme",
-        "light"
-      ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
-    },
-    {
-      "id": "lilka-medium-light-theme",
-      "name": "Lilka Medium Light",
-      "description": "Medium-light gray theme with complete background configuration.",
-      "type": "theme",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/appearances/lilka-medium-light-theme",
-      "commit": "0000000000000000000000000000000000000000",
-      "digest": "sha256:8f52028269db37aec81e6595298244e09619d78300e2dcb135e17331e1b19185",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [
-        "lilka",
-        "theme",
-        "light"
       ],
       "publishedAt": "2026-08-29T00:00:00.000Z"
     },
@@ -90,6 +72,114 @@
       "tags": [
         "lilka",
         "icons"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-default-theme",
+      "name": "Lilka Default",
+      "description": "Default Lilka appearance theme — deep charcoal surfaces, crisp zinc borders, and a vivid blue accent.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-default-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:926576f2c3417051c19ceda5fa627284ca08abb1a58264765aabc782e8d85794",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "dark"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-light-theme",
+      "name": "Lilka Light",
+      "description": "Light Lilka appearance theme with crisp neutral surfaces and a focused lilac accent.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-light-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:243389e2858ddfdf1dda4a8fa089823f0893acd9bafd0c4c3e4c50dc3fb9a16e",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "light"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "lilka-medium-light-theme",
+      "name": "Lilka Medium Light",
+      "description": "Medium-light Lilka appearance theme built from calm gray surfaces and graphite accents.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/lilka-medium-light-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:8f52028269db37aec81e6595298244e09619d78300e2dcb135e17331e1b19185",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "lilka",
+        "theme",
+        "light"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "material-icon-theme",
+      "name": "Material Icon Theme",
+      "description": "Popular MIT-licensed icon theme adapted for Lilka from material-extensions/vscode-material-icon-theme.",
+      "type": "iconTheme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/material-icon-theme",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:d23127b39920550d69451adecaf139fbae8e6fa33d906e67f8e6671a02f38451",
+      "version": "1.0.0",
+      "downloads": 2953,
+      "tags": [
+        "icons",
+        "material",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "one-dark-pro",
+      "name": "One Dark Pro",
+      "description": "The widely used One Dark Pro palette adapted for Lilka.",
+      "type": "theme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/one-dark-pro",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:7e0cdc690eb5f2ad029552b4abb9a712f1c358e9d0d157cb6f444200953ab6a4",
+      "version": "1.0.0",
+      "downloads": 1781,
+      "tags": [
+        "theme",
+        "dark",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "vscode-icons",
+      "name": "vscode-icons",
+      "description": "Popular MIT-licensed icon theme adapted for Lilka from vscode-icons/vscode-icons.",
+      "type": "iconTheme",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/appearances/vscode-icons",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:d172cf7215edf35068eee42d450ab93b7180bf063f2ceb9b1524b031337a98a3",
+      "version": "1.0.0",
+      "downloads": 5132,
+      "tags": [
+        "icons",
+        "files",
+        "popular"
       ],
       "publishedAt": "2026-08-29T00:00:00.000Z"
     }

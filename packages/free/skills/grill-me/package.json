@@ -1,0 +1,18 @@
+{
+  "type": "skill",
+  "version": "1.0.0",
+  "name": "grill-me",
+  "description": "Popular skill grill-me",
+  "license": "MIT",
+  "source": {
+    "repository": "mattpocock/skills",
+    "commit": "6654f6b60cd9d5be8b54c6fafe44346dabeb3b76",
+    "path": "skills/productivity/grill-me/SKILL.md"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "content": "zsh:1: no matches found: repos/mattpocock/skills/contents/skills/productivity/grill-me/SKILL.md?ref=6654f6b60cd9d5be8b54c6fafe44346dabeb3b76\n"
+    }
+  ]
+}

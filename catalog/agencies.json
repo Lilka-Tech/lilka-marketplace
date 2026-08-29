@@ -25,7 +25,7 @@
     {
       "id": "task-development",
       "name": "Task Development",
-      "description": "A context-first delivery workflow with planning, implementation, and a review gate.",
+      "description": "A context-first delivery workflow with planning, implementation, and a review gate that returns inconsistencies to planning.",
       "type": "agency",
       "repository": "Lilka-Tech/lilka-marketplace",
       "path": "packages/free/agencies/task-development",

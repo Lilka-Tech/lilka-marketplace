@@ -1,0 +1,18 @@
+{
+  "type": "skill",
+  "version": "1.0.0",
+  "name": "improve-codebase-architecture",
+  "description": "Popular skill improve-codebase-architecture",
+  "license": "MIT",
+  "source": {
+    "repository": "mattpocock/skills",
+    "commit": "6654f6b60cd9d5be8b54c6fafe44346dabeb3b76",
+    "path": "skills/engineering/improve-codebase-architecture/SKILL.md"
+  },
+  "files": [
+    {
+      "path": "SKILL.md",
+      "content": "zsh:1: no matches found: repos/mattpocock/skills/contents/skills/engineering/improve-codebase-architecture/SKILL.md?ref=6654f6b60cd9d5be8b54c6fafe44346dabeb3b76\n"
+    }
+  ]
+}

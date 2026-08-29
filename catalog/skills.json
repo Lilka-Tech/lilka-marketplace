@@ -1,1 +1,80 @@
-{"schemaVersion":1,"generatedAt":"1970-01-01T00:00:00.000Z","version":1,"commit":"0000000000000000000000000000000000000000","entries":[]}
+{
+  "schemaVersion": 1,
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "version": 1,
+  "commit": "0000000000000000000000000000000000000000",
+  "entries": [
+    {
+      "id": "find-skills",
+      "name": "find-skills",
+      "description": "Popular skill find-skills",
+      "type": "skill",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/skills/find-skills",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:daf05dace491a209544f40c2aa32610fb1d949d9f9a728a2641a29bf6dac1d89",
+      "version": "1.0.0",
+      "downloads": 3200000,
+      "tags": [
+        "skills",
+        "discovery",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "grill-me",
+      "name": "grill-me",
+      "description": "Popular skill grill-me",
+      "type": "skill",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/skills/grill-me",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:e6354c8304eb930ffcc508886a9c1f5b6ce009ffa4eb11744442f4e0059166a0",
+      "version": "1.0.0",
+      "downloads": 999200,
+      "tags": [
+        "requirements",
+        "clarification",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "description": "Popular skill improve-codebase-architecture",
+      "type": "skill",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/skills/improve-codebase-architecture",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:4e54b38a3cc20714c657157cd81af2b607ff1e7f6220b0f3ac35b6e0793c7cb8",
+      "version": "1.0.0",
+      "downloads": 819100,
+      "tags": [
+        "architecture",
+        "codebase",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    },
+    {
+      "id": "tdd",
+      "name": "tdd",
+      "description": "Popular skill tdd",
+      "type": "skill",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/skills/tdd",
+      "commit": "0000000000000000000000000000000000000000",
+      "digest": "sha256:5da3912cf80fcc8fb535b50033622a16ac2509bb04c2a01809b5f40f380abddb",
+      "version": "1.0.0",
+      "downloads": 791800,
+      "tags": [
+        "testing",
+        "tdd",
+        "popular"
+      ],
+      "publishedAt": "2026-08-29T00:00:00.000Z"
+    }
+  ]
+}
