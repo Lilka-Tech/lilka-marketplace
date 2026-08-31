@@ -59,6 +59,45 @@
       "publishedAt": "2026-08-29T00:00:00.000Z"
     },
     {
+      "id": "migration-assistant",
+      "name": "Migration Assistant",
+      "description": "Discovers and migrates agents, instructions, skills, and skill-based plugins from other coding-agent ecosystems into a Lilka project.",
+      "type": "agent",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/agents/migration-assistant",
+      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
+      "digest": "sha256:27550b820ce30ae3bb8a0d3c3baa2983e842b7fcec6b411992569d3aa0ac2eb6",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "migration",
+        "agents",
+        "skills",
+        "codex",
+        "claude"
+      ],
+      "publishedAt": "2026-08-31T00:00:00.000Z"
+    },
+    {
+      "id": "conversation-titler",
+      "name": "Conversation Titler",
+      "description": "Creates concise, descriptive conversation titles when invoked by a Lilka trigger.",
+      "type": "agent",
+      "repository": "Lilka-Tech/lilka-marketplace",
+      "path": "packages/free/agents/conversation-titler",
+      "commit": "480a07cae327f3a26d88a007048feb9a76d51cb5",
+      "digest": "sha256:d736baf9e460c5be6f3ece8914ede6e48859bb30f596e08fc41efedab958b759",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [
+        "conversation",
+        "title",
+        "automation",
+        "trigger"
+      ],
+      "publishedAt": "2026-08-31T00:00:00.000Z"
+    },
+    {
       "id": "catppuccin-mocha",
       "name": "Catppuccin Mocha",
       "description": "The popular Catppuccin Mocha palette adapted for Lilka.",

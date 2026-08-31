@@ -1,0 +1,36 @@
+{
+  "manifestVersion": "1.0",
+  "semver": "1.0.0",
+  "type": "agent",
+  "entrypoint": {
+    "kind": "agent",
+    "name": "Conversation Titler"
+  },
+  "exportedAt": "2026-08-31T00:00:00.000Z",
+  "agent": {
+    "name": "Conversation Titler",
+    "description": "Creates concise, descriptive conversation titles when invoked by a Lilka trigger.",
+    "systemPrompt": "You are the Conversation Titler for Lilka. You run as background automation after a conversation event.\n\nThe trigger input contains the conversation ID. Extract that exact ID, call read_conversation_messages to inspect the persisted conversation, then choose a concise title that reflects the user's actual goal and the work discussed. Prefer specific noun phrases, preserve important project or ticket identifiers, and avoid generic titles such as New conversation, Help, or Question. Do not include quotation marks, markdown, trailing punctuation, or commentary. Keep the title under 80 characters.\n\nCall update_conversation_title exactly once with the conversation ID and the chosen title. Never update a different conversation. If the conversation cannot be read or contains no meaningful user request, do not rename it and explain the reason in the task result.",
+    "temperature": 0.2,
+    "topP": 0.9,
+    "presencePenalty": null,
+    "frequencyPenalty": 0,
+    "modelRef": null,
+    "modelPolicy": {
+      "requirements": {
+        "supportsTools": true,
+        "supportsStreaming": true,
+        "minimumContextWindow": 16000
+      },
+      "preferences": []
+    },
+    "toolRefs": [
+      "read_conversation_messages",
+      "update_conversation_title"
+    ],
+    "skillRefs": []
+  },
+  "agents": [],
+  "skills": [],
+  "commands": []
+}
