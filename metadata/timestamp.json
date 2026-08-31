@@ -1,15 +1,15 @@
 {
   "signed": {
     "schemaVersion": 1,
-    "version": 5,
-    "expiresAt": "2026-09-05T15:18:03.740Z",
-    "snapshotVersion": 5
+    "version": 6,
+    "expiresAt": "2026-09-07T13:24:33.299Z",
+    "snapshotVersion": 6
   },
   "signatures": [
     {
       "keyid": "root-1",
       "algorithm": "EdDSA",
-      "signature": "bjpaDRhox5Hgp57rcUY0wJnILlbJA6vx3qa9JCzmhqIfC4Sx9TXYpmDDd8P28zEoCMtK7YHiAhgYupEXdbLZAw"
+      "signature": "KRaXaCOcX6S06aoes5cDrtZfCJe9qWzBVa6IpVCM_sFzx6Nkeq37KDJfMMBl48llVJbTy2f9_ZP1enSbmw88CQ"
     }
   ]
 }
