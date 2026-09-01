@@ -2,9 +2,31 @@ import { readFile, readdir } from 'node:fs/promises';
 import { isAbsolute, join, normalize, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 
-const canonicalDigest = (value) => `sha256:${createHash('sha256').update(JSON.stringify(value)).digest('hex')}`;
+const sorted = (value) => Array.isArray(value) ? value.map(sorted) : value && typeof value === 'object' ? Object.fromEntries(Object.entries(value).sort(([left], [right]) => left.localeCompare(right)).map(([key, item]) => [key, sorted(item)])) : value;
+const canonicalDigest = (value, deterministic = false) => `sha256:${createHash('sha256').update(JSON.stringify(deterministic ? sorted(value) : value)).digest('hex')}`;
+const validateTool = (tool, refs, key) => {
+  if (!/^[a-z0-9][a-z0-9._:/-]*$/.test(tool.ref ?? '')) throw new Error(`Invalid tool ref for ${key}`);
+  if (!/^[A-Za-z_][A-Za-z0-9_-]{0,63}$/.test(tool.runtimeName ?? '')) throw new Error(`Invalid runtimeName for ${key}`);
+  if (!tool.inputSchema || typeof tool.inputSchema !== 'object') throw new Error(`Input schema is required for ${key}`);
+  if (!tool.executor || !['http', 'mcp', 'composition', 'script'].includes(tool.executor.type)) throw new Error(`Invalid executor for ${key}`);
+  if (tool.executor.type === 'composition') {
+    const ids = new Set(tool.executor.nodes?.map((node) => node.id) ?? []);
+    if (!ids.size || ids.size !== tool.executor.nodes.length) throw new Error(`Invalid composition nodes for ${key}`);
+    for (const node of tool.executor.nodes) {
+      if (!refs.has(node.toolRef)) throw new Error(`Composition ${key} references tool outside its pack: ${node.toolRef}`);
+      if ((node.dependsOn ?? []).some((dependency) => !ids.has(dependency))) throw new Error(`Composition ${key} has an unknown dependency`);
+    }
+    const visiting = new Set(); const visited = new Set(); const byId = new Map(tool.executor.nodes.map((node) => [node.id, node]));
+    const visit = (id) => { if (visiting.has(id)) return false; if (visited.has(id)) return true; visiting.add(id); if ((byId.get(id)?.dependsOn ?? []).some((dep) => !visit(dep))) return false; visiting.delete(id); visited.add(id); return true; };
+    if ([...ids].some((id) => !visit(id))) throw new Error(`Composition ${key} contains a cycle`);
+  }
+  if (tool.executor.type === 'script') {
+    if (!['typescript', 'python'].includes(tool.executor.runtime) || !tool.executor.files?.[tool.executor.entrypoint]) throw new Error(`Script source and entrypoint are required for ${key}`);
+    for (const path of Object.keys(tool.executor.files)) if (isAbsolute(path) || normalize(path).split(sep).includes('..')) throw new Error(`Unsafe script source path for ${key}: ${path}`);
+  }
+};
 
-const catalogs = ['index.json', 'agents.json', 'agencies.json', 'skills.json', 'appearances.json'];
+const catalogs = ['index.json', 'agents.json', 'agencies.json', 'skills.json', 'appearances.json', 'tools.json'];
 for (const file of catalogs) {
   const value = JSON.parse(await readFile(join('catalog', file), 'utf8'));
   if (value.schemaVersion !== 1 || !Array.isArray(value.entries)) throw new Error(`Invalid catalog/${file}`);
@@ -23,13 +45,30 @@ for (const file of catalogs) {
     if (payload.type !== entry.type || packageVersion !== entry.version) {
       throw new Error(`Package identity mismatch for ${key}`);
     }
-    if (canonicalDigest(payload) !== entry.digest) throw new Error(`Package digest mismatch for ${key}`);
+    if (canonicalDigest(payload, payload.type === 'tool' || payload.type === 'toolPack') !== entry.digest) throw new Error(`Package digest mismatch for ${key}`);
+    if (payload.type === 'tool' || payload.type === 'toolPack') {
+      if (!payload.permissions || !payload.compatibility) throw new Error(`Tool permissions and compatibility are required for ${key}`);
+      if (payload.type === 'tool') {
+        if (payload.executor?.type === 'composition') throw new Error(`Standalone public compositions are forbidden for ${key}`);
+        validateTool(payload, new Set([payload.ref]), key);
+      }
+      if (payload.type === 'toolPack') {
+        if (!Array.isArray(payload.tools) || !payload.tools.length) throw new Error(`Invalid tool pack for ${key}`);
+        const refs = new Set(payload.tools.map((tool) => tool.ref));
+        if (refs.size !== payload.tools.length) throw new Error(`Duplicate refs in ${key}`);
+        for (const tool of payload.tools) validateTool(tool, refs, `${key}:${tool.ref}`);
+      }
+    }
     ids.add(key);
   }
 }
-const forbidden = /(-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16})/;
+const forbidden = /(-----BEGIN (?:RSA |EC |OPENSSH )?PRIVATE KEY-----|gh[pousr]_[A-Za-z0-9]{20,}|AKIA[0-9A-Z]{16}|(?:api[_-]?key|password|token)\s*[:=]\s*["'][^"'$]{8,})/i;
 for (const directory of ['catalog', 'packages', 'policies', 'schemas']) for (const name of await readdir(directory, { recursive: true })) {
   const target = join(directory, name.toString());
-  const content = await readFile(target, 'utf8').catch(() => '');
+  const bytes = await readFile(target).catch(() => Buffer.alloc(0));
+  if (bytes.includes(0)) throw new Error(`Binary file is forbidden: ${target}`);
+  const content = bytes.toString('utf8');
   if (forbidden.test(content)) throw new Error(`Potential secret in ${target}`);
+  if (/lock(?:\.json|\.yaml|\.lock)$/.test(target) && /(?:localhost|127\.|10\.|192\.168\.|172\.(?:1[6-9]|2\d|3[01])\.)/.test(content))
+    throw new Error(`Private dependency URL in ${target}`);
 }

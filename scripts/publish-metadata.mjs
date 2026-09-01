@@ -13,7 +13,12 @@ const encode = (value) => Buffer.from(JSON.stringify(value)).toString('base64url
 const envelope = (signed) => ({ signed, signatures: [{ keyid: 'root-1', algorithm: 'EdDSA', signature: sign(null, Buffer.from(JSON.stringify(signed)), key).toString('base64url') }] });
 const root = { schemaVersion: 1, version: 1, expiresAt: new Date(now.getTime() + 366 * 86400000).toISOString(), keys: { 'root-1': publicJwk }, threshold: 1 };
 const catalogs = {};
-for (const name of ['index', 'agents', 'agencies', 'skills', 'appearances']) {
+const toolCatalog = JSON.parse(await readFile('catalog/tools.json', 'utf8'));
+const indexCatalog = JSON.parse(await readFile('catalog/index.json', 'utf8'));
+const toolKeys = new Set(toolCatalog.entries.map((entry) => `${entry.id}@${entry.version}`));
+indexCatalog.entries = [...indexCatalog.entries.filter((entry) => !toolKeys.has(`${entry.id}@${entry.version}`)), ...toolCatalog.entries];
+await writeFile('catalog/index.json', `${JSON.stringify(indexCatalog, null, 2)}\n`);
+for (const name of ['index', 'agents', 'agencies', 'skills', 'appearances', 'tools']) {
   const catalog = JSON.parse(await readFile(`catalog/${name}.json`, 'utf8'));
   catalog.version = publicationVersion;
   catalog.commit = publicationCommit;

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "type": "toolPack",
+  "ref": "fixture.mixed-pack",
+  "name": "Mixed fixture pack",
+  "description": "HTTP and script fixture pack.",
+  "version": "1.0.0",
+  "tools": [
+    { "schemaVersion": 1, "type": "tool", "ref": "fixture.http", "name": "HTTP fixture", "runtimeName": "fixture_http", "description": "Calls example API.", "version": "1.0.0", "inputSchema": { "type": "object" }, "outputSchema": null, "executor": { "type": "http", "url": "https://api.example.com", "method": "GET" }, "permissions": { "network": { "hosts": ["api.example.com"], "allowPrivate": false }, "filesystem": "none", "subprocess": false, "secrets": [], "limits": {} }, "compatibility": { "platforms": ["darwin", "linux", "win32"] }, "publisher": null, "source": { "type": "local" } },
+    { "schemaVersion": 1, "type": "tool", "ref": "fixture.script", "name": "Script fixture", "runtimeName": "fixture_script", "description": "Runs readable TypeScript.", "version": "1.0.0", "inputSchema": { "type": "object" }, "outputSchema": null, "executor": { "type": "script", "runtime": "typescript", "entrypoint": "index.ts", "files": { "index.ts": "console.log(JSON.stringify({ok:true}))" } }, "permissions": { "network": { "hosts": [], "allowPrivate": false }, "filesystem": "none", "subprocess": false, "secrets": [], "limits": {} }, "compatibility": { "platforms": ["darwin", "linux", "win32"] }, "publisher": null, "source": { "type": "local" } }
+  ],
+  "permissions": { "network": { "hosts": ["api.example.com"], "allowPrivate": false }, "filesystem": "none", "subprocess": false, "secrets": [], "limits": {} },
+  "compatibility": { "platforms": ["darwin", "linux", "win32"] }
+}

@@ -1,0 +1,7 @@
+{
+  "httpEmbeddedCredential": { "type": "http", "url": "https://user:password@example.com" },
+  "mcpMissingRequirement": { "type": "mcp", "remoteToolName": "lookup" },
+  "compositionCycle": { "type": "composition", "nodes": [{ "id": "a", "toolRef": "tool:a", "dependsOn": ["b"] }, { "id": "b", "toolRef": "tool:b", "dependsOn": ["a"] }] },
+  "typescriptEscape": { "type": "script", "runtime": "typescript", "entrypoint": "../index.ts", "files": {} },
+  "pythonBinary": { "type": "script", "runtime": "python", "entrypoint": "main.py", "files": { "main.py": "BASE64_BINARY_PLACEHOLDER" } }
+}

@@ -1,0 +1,7 @@
+{
+  "http": { "type": "http", "url": "https://api.example.com/items/${input.id}", "method": "GET" },
+  "mcp": { "type": "mcp", "serverRequirementRef": "mcp:example", "remoteToolName": "lookup", "input": { "query": "$input.query" } },
+  "composition": { "type": "composition", "nodes": [{ "id": "lookup", "toolRef": "tool:lookup", "dependsOn": [], "input": "$input", "retries": 1 }] },
+  "typescript": { "type": "script", "runtime": "typescript", "entrypoint": "index.ts", "files": { "index.ts": "console.log(JSON.stringify({ok:true}))" } },
+  "python": { "type": "script", "runtime": "python", "entrypoint": "main.py", "files": { "main.py": "import json\nprint(json.dumps({'ok': True}))\n" } }
+}
