@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-29T15:18:03.740Z",
+  "schemaVersion": 2,
   "version": 5,
+  "generatedAt": "2026-08-29T15:18:03.740Z",
   "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
   "entries": [
     {
@@ -9,9 +9,6 @@
       "name": "General Assistant",
       "description": "A versatile assistant for planning, writing, analysis, and structured deliverables.",
       "type": "agent",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/agents/general-assistant",
-      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
       "digest": "sha256:53790f224152d808e3bbf82c181129b5bb5e0e131e986207f5d3a7ae1a3efbbc",
       "version": "1.0.0",
       "downloads": 0,
@@ -20,16 +17,21 @@
         "general",
         "assistant"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-marketplace",
+        "ref": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
+        "path": "packages/free/agents/general-assistant",
+        "format": "auto"
+      }
     },
     {
       "id": "migration-assistant",
       "name": "Migration Assistant",
       "description": "Discovers and migrates agents, instructions, skills, and skill-based plugins from other coding-agent ecosystems into a Lilka project.",
       "type": "agent",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/agents/migration-assistant",
-      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
       "digest": "sha256:27550b820ce30ae3bb8a0d3c3baa2983e842b7fcec6b411992569d3aa0ac2eb6",
       "version": "1.0.0",
       "downloads": 0,
@@ -40,16 +42,21 @@
         "codex",
         "claude"
       ],
-      "publishedAt": "2026-08-31T00:00:00.000Z"
+      "publishedAt": "2026-08-31T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-marketplace",
+        "ref": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
+        "path": "packages/free/agents/migration-assistant",
+        "format": "auto"
+      }
     },
     {
       "id": "conversation-titler",
       "name": "Conversation Titler",
       "description": "Creates concise, descriptive conversation titles when invoked by a Lilka trigger.",
       "type": "agent",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/agents/conversation-titler",
-      "commit": "480a07cae327f3a26d88a007048feb9a76d51cb5",
       "digest": "sha256:d736baf9e460c5be6f3ece8914ede6e48859bb30f596e08fc41efedab958b759",
       "version": "1.0.0",
       "downloads": 0,
@@ -59,7 +66,15 @@
         "automation",
         "trigger"
       ],
-      "publishedAt": "2026-08-31T00:00:00.000Z"
+      "publishedAt": "2026-08-31T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-marketplace",
+        "ref": "480a07cae327f3a26d88a007048feb9a76d51cb5",
+        "path": "packages/free/agents/conversation-titler",
+        "format": "auto"
+      }
     }
   ]
 }

@@ -23,7 +23,13 @@ for (const name of ['index', 'agents', 'agencies', 'skills', 'appearances', 'too
   catalog.version = publicationVersion;
   catalog.commit = publicationCommit;
   catalog.generatedAt = now.toISOString();
-  catalog.entries = catalog.entries.map((entry) => ({ ...entry, commit: publicationCommit }));
+  catalog.entries = catalog.entries.map((entry) => {
+    if ('source' in entry) {
+      const isMonorepo = entry.source.owner === 'Lilka-Tech' && entry.source.repo === 'lilka-marketplace';
+      return isMonorepo ? { ...entry, source: { ...entry.source, ref: publicationCommit } } : entry;
+    }
+    return { ...entry, commit: publicationCommit };
+  });
   catalogs[name] = catalog;
   await writeFile(`catalog/${name}.json`, `${JSON.stringify(catalog, null, 2)}\n`);
 }

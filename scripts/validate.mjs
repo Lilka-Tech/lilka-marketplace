@@ -1,5 +1,5 @@
 import { readFile, readdir } from 'node:fs/promises';
-import { isAbsolute, join, normalize, sep } from 'node:path';
+import { dirname, isAbsolute, join, normalize, sep } from 'node:path';
 import { createHash } from 'node:crypto';
 
 const sorted = (value) => Array.isArray(value) ? value.map(sorted) : value && typeof value === 'object' ? Object.fromEntries(Object.entries(value).sort(([left], [right]) => left.localeCompare(right)).map(([key, item]) => [key, sorted(item)])) : value;
@@ -26,39 +26,85 @@ const validateTool = (tool, refs, key) => {
   }
 };
 
+const validateSource = (source, key) => {
+  if (source.kind !== 'github') throw new Error(`Unsupported source kind for ${key}`);
+  if (!source.owner || !source.repo || !source.ref) throw new Error(`Incomplete github source for ${key}`);
+  if (isAbsolute(source.path) || normalize(source.path ?? '.').split(sep).includes('..')) throw new Error(`Invalid source path for ${key}`);
+  if (String(source.path ?? '').endsWith('/SKILL.md') || source.path === 'SKILL.md') throw new Error(`Source path must be a directory for ${key}`);
+};
+
+const validateV1Entry = async (entry) => {
+  const key = `${entry.id}@${entry.version}`;
+  if (!/^sha256:[a-f0-9]{64}$/.test(entry.digest)) throw new Error(`Invalid digest for ${key}`);
+  if (entry.repository !== 'Lilka-Tech/lilka-marketplace') throw new Error(`Invalid repository for ${key}`);
+  if (isAbsolute(entry.path) || normalize(entry.path).split(sep).includes('..') || !entry.path.startsWith('packages/free/')) {
+    throw new Error(`Invalid package path for ${key}`);
+  }
+  const packageFile = join(entry.path, 'package.json');
+  const payload = JSON.parse(await readFile(packageFile, 'utf8'));
+  const packageVersion = payload.version ?? payload.semver;
+  if (payload.type !== entry.type || packageVersion !== entry.version) {
+    throw new Error(`Package identity mismatch for ${key}`);
+  }
+  if (canonicalDigest(payload, payload.type === 'tool' || payload.type === 'toolPack') !== entry.digest) throw new Error(`Package digest mismatch for ${key}`);
+  if (payload.type === 'tool' || payload.type === 'toolPack') {
+    if (!payload.permissions || !payload.compatibility) throw new Error(`Tool permissions and compatibility are required for ${key}`);
+    if (payload.type === 'tool') {
+      if (payload.executor?.type === 'composition') throw new Error(`Standalone public compositions are forbidden for ${key}`);
+      validateTool(payload, new Set([payload.ref]), key);
+    }
+    if (payload.type === 'toolPack') {
+      if (!Array.isArray(payload.tools) || !payload.tools.length) throw new Error(`Invalid tool pack for ${key}`);
+      const refs = new Set(payload.tools.map((tool) => tool.ref));
+      if (refs.size !== payload.tools.length) throw new Error(`Duplicate refs in ${key}`);
+      for (const tool of payload.tools) validateTool(tool, refs, `${key}:${tool.ref}`);
+    }
+  }
+};
+
+const validateV2Entry = async (entry) => {
+  const key = `${entry.id}@${entry.version}`;
+  if (!/^sha256:[a-f0-9]{64}$/.test(entry.digest)) throw new Error(`Invalid digest for ${key}`);
+  validateSource(entry.source, key);
+  const isMonorepo = entry.source.owner === 'Lilka-Tech' && entry.source.repo === 'lilka-marketplace';
+  if (!isMonorepo) {
+    if (entry.type === 'plugin' && !entry.pluginFormat && entry.source.format === 'auto') throw new Error(`pluginFormat is required for ${key}`);
+    return;
+  }
+  const packagePath = entry.source.path;
+  if (!packagePath.startsWith('packages/free/')) throw new Error(`Invalid monorepo package path for ${key}`);
+  const packageFile = join(packagePath, 'package.json');
+  const payload = JSON.parse(await readFile(packageFile, 'utf8'));
+  const packageVersion = payload.version ?? payload.semver;
+  if (payload.type !== entry.type || packageVersion !== entry.version) {
+    throw new Error(`Package identity mismatch for ${key}`);
+  }
+  if (canonicalDigest(payload, payload.type === 'tool' || payload.type === 'toolPack') !== entry.digest) throw new Error(`Package digest mismatch for ${key}`);
+  if (payload.type === 'tool' || payload.type === 'toolPack') {
+    if (!payload.permissions || !payload.compatibility) throw new Error(`Tool permissions and compatibility are required for ${key}`);
+    if (payload.type === 'tool') {
+      if (payload.executor?.type === 'composition') throw new Error(`Standalone public compositions are forbidden for ${key}`);
+      validateTool(payload, new Set([payload.ref]), key);
+    }
+    if (payload.type === 'toolPack') {
+      if (!Array.isArray(payload.tools) || !payload.tools.length) throw new Error(`Invalid tool pack for ${key}`);
+      const refs = new Set(payload.tools.map((tool) => tool.ref));
+      if (refs.size !== payload.tools.length) throw new Error(`Duplicate refs in ${key}`);
+      for (const tool of payload.tools) validateTool(tool, refs, `${key}:${tool.ref}`);
+    }
+  }
+};
+
 const catalogs = ['index.json', 'agents.json', 'agencies.json', 'skills.json', 'appearances.json', 'tools.json'];
 for (const file of catalogs) {
   const value = JSON.parse(await readFile(join('catalog', file), 'utf8'));
-  if (value.schemaVersion !== 1 || !Array.isArray(value.entries)) throw new Error(`Invalid catalog/${file}`);
+  if (![1, 2].includes(value.schemaVersion) || !Array.isArray(value.entries)) throw new Error(`Invalid catalog/${file}`);
   const ids = new Set();
   for (const entry of value.entries) {
     const key = `${entry.id}@${entry.version}`;
     if (ids.has(key)) throw new Error(`Duplicate entry ${key}`);
-    if (!/^sha256:[a-f0-9]{64}$/.test(entry.digest)) throw new Error(`Invalid digest for ${key}`);
-    if (entry.repository !== 'Lilka-Tech/lilka-marketplace') throw new Error(`Invalid repository for ${key}`);
-    if (isAbsolute(entry.path) || normalize(entry.path).split(sep).includes('..') || !entry.path.startsWith('packages/free/')) {
-      throw new Error(`Invalid package path for ${key}`);
-    }
-    const packageFile = join(entry.path, 'package.json');
-    const payload = JSON.parse(await readFile(packageFile, 'utf8'));
-    const packageVersion = payload.version ?? payload.semver;
-    if (payload.type !== entry.type || packageVersion !== entry.version) {
-      throw new Error(`Package identity mismatch for ${key}`);
-    }
-    if (canonicalDigest(payload, payload.type === 'tool' || payload.type === 'toolPack') !== entry.digest) throw new Error(`Package digest mismatch for ${key}`);
-    if (payload.type === 'tool' || payload.type === 'toolPack') {
-      if (!payload.permissions || !payload.compatibility) throw new Error(`Tool permissions and compatibility are required for ${key}`);
-      if (payload.type === 'tool') {
-        if (payload.executor?.type === 'composition') throw new Error(`Standalone public compositions are forbidden for ${key}`);
-        validateTool(payload, new Set([payload.ref]), key);
-      }
-      if (payload.type === 'toolPack') {
-        if (!Array.isArray(payload.tools) || !payload.tools.length) throw new Error(`Invalid tool pack for ${key}`);
-        const refs = new Set(payload.tools.map((tool) => tool.ref));
-        if (refs.size !== payload.tools.length) throw new Error(`Duplicate refs in ${key}`);
-        for (const tool of payload.tools) validateTool(tool, refs, `${key}:${tool.ref}`);
-      }
-    }
+    if (value.schemaVersion === 1) await validateV1Entry(entry);
+    else await validateV2Entry(entry);
     ids.add(key);
   }
 }

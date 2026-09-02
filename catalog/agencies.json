@@ -1,7 +1,7 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-29T15:18:03.740Z",
+  "schemaVersion": 2,
   "version": 5,
+  "generatedAt": "2026-08-29T15:18:03.740Z",
   "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
   "entries": [
     {
@@ -9,9 +9,6 @@
       "name": "Content Pipeline",
       "description": "A generic two-step workflow that researches a topic and delivers structured content.",
       "type": "agency",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/agencies/content-pipeline",
-      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
       "digest": "sha256:4d2b03ead5121ee3ceefbd2df72d6a04c4715274c884e88956dd8b98389face3",
       "version": "1.0.0",
       "downloads": 0,
@@ -20,16 +17,21 @@
         "workflow",
         "content"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-marketplace",
+        "ref": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
+        "path": "packages/free/agencies/content-pipeline",
+        "format": "auto"
+      }
     },
     {
       "id": "task-development",
       "name": "Task Development",
       "description": "A context-first delivery workflow with planning, implementation, and a review gate that returns inconsistencies to planning.",
       "type": "agency",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/agencies/task-development",
-      "commit": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
       "digest": "sha256:86ba2e91c89f3488d0877e89d0ee6ee90595741a0380bbfd17dd18b11abee487",
       "version": "1.0.0",
       "downloads": 0,
@@ -38,7 +40,15 @@
         "workflow",
         "development"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-marketplace",
+        "ref": "8bc1b4bfc1ac132262cee30f11fcd1e70abbd7e2",
+        "path": "packages/free/agencies/task-development",
+        "format": "auto"
+      }
     }
   ]
 }
