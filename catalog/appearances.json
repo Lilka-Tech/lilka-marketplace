@@ -1,9 +1,29 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T11:44:22.098Z",
-  "version": 19,
-  "commit": "c1f011321bb095493fc45cc4ba2c12211bae0b1b",
+  "generatedAt": "2026-09-09T11:46:41.777Z",
+  "version": 20,
+  "commit": "2b60f878bd5a18f8351cc6787aca6b0a141ca2f7",
   "entries": [
+    {
+      "id": "Caleul/lilka-catalog-e2e/iconTheme/catalog-e2e-icons",
+      "name": "Catalog E2E Icons",
+      "description": "Synthetic icon catalog lifecycle fixture.",
+      "type": "iconTheme",
+      "source": {
+        "kind": "github",
+        "owner": "Caleul",
+        "repo": "lilka-catalog-e2e",
+        "ref": "ce3a104202f289f8da0ee6570fc9fe2f73ddf40e",
+        "path": "packages/iconTheme/catalog-e2e/1.0.0",
+        "format": "auto"
+      },
+      "digest": "sha256:9607560ba083f8145bf866dcd23d66fde09489644d939385a4340b39999b7152",
+      "version": "1.0.0",
+      "downloads": 0,
+      "tags": [],
+      "publishedAt": "2026-09-09T11:41:09.570Z",
+      "license": "MIT"
+    },
     {
       "id": "lilka-default-icons",
       "name": "Lilka Default Icons",

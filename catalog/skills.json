@@ -1,9 +1,29 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T11:44:22.098Z",
-  "version": 19,
-  "commit": "c1f011321bb095493fc45cc4ba2c12211bae0b1b",
+  "generatedAt": "2026-09-09T11:46:41.777Z",
+  "version": 20,
+  "commit": "2b60f878bd5a18f8351cc6787aca6b0a141ca2f7",
   "entries": [
+    {
+      "id": "Caleul/lilka-catalog-e2e/skill/catalog-e2e-skill",
+      "name": "Catalog E2E Skill",
+      "description": "Synthetic skill for catalog lifecycle validation.",
+      "type": "skill",
+      "source": {
+        "kind": "github",
+        "owner": "Caleul",
+        "repo": "lilka-catalog-e2e",
+        "ref": "ccb711b03d8f0d911491d34b990bf9f54fd50871",
+        "path": "packages/skill/catalog-e2e-skill/1.0.1",
+        "format": "auto"
+      },
+      "digest": "sha256:e78cf9accc474150e33c31ecfcede320ade8b1088b967958654f56cd9cbd0b39",
+      "version": "1.0.1",
+      "downloads": 0,
+      "tags": [],
+      "publishedAt": "2026-09-09T11:40:47.508Z",
+      "license": "MIT"
+    },
     {
       "id": "find-skills",
       "name": "find-skills",
