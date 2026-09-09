@@ -1,29 +1,9 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T11:54:12.915Z",
-  "version": 21,
-  "commit": "74e6267a6606e50c09db6726b14498d7541e279d",
+  "generatedAt": "2026-09-09T12:13:07.878Z",
+  "version": 22,
+  "commit": "babec30ab7a188a7fc0f4eefb48718b8510850a7",
   "entries": [
-    {
-      "id": "Caleul/lilka-catalog-e2e/agency/catalog-e2e-agency",
-      "name": "Catalog E2E Agency",
-      "description": "Synthetic workflow for catalog lifecycle validation.",
-      "type": "agency",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "ec9189f091f28746bb5e2547b0d1bd2754ba851d",
-        "path": "packages/agency/catalog-e2e-agency/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:091febd608e8386d0d736db00b7a566cca03cad1d62e9e08c0bce06c0a6c9fe7",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:15:32.859Z",
-      "license": "MIT"
-    },
     {
       "id": "content-pipeline",
       "name": "Content Pipeline",
@@ -69,26 +49,6 @@
         "path": "free/agencies/task-development",
         "format": "auto"
       }
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/agent/catalog-e2e-writer",
-      "name": "Catalog E2E Writer",
-      "description": "Synthetic writer for catalog lifecycle validation.",
-      "type": "agent",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "c54f2bde4b9e4e75c750bd29c86b46765b1575cb",
-        "path": "packages/agent/catalog-e2e-writer/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:e64d162c571285ed9fa17d844f0a267186b3523dd558242525948288fe975f36",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:13:22.509Z",
-      "license": "MIT"
     },
     {
       "id": "conversation-titler",
@@ -163,26 +123,6 @@
       }
     },
     {
-      "id": "Caleul/lilka-catalog-e2e/iconTheme/catalog-e2e-icons",
-      "name": "Catalog E2E Icons",
-      "description": "Synthetic icon catalog lifecycle fixture.",
-      "type": "iconTheme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "ce3a104202f289f8da0ee6570fc9fe2f73ddf40e",
-        "path": "packages/iconTheme/catalog-e2e/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:9607560ba083f8145bf866dcd23d66fde09489644d939385a4340b39999b7152",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:41:09.570Z",
-      "license": "MIT"
-    },
-    {
       "id": "lilka-default-icons",
       "name": "Lilka Default Icons",
       "description": "Default Lilka file icon theme.",
@@ -249,47 +189,6 @@
         "path": "free/appearances/vscode-icons",
         "format": "auto"
       }
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/plugin/catalog-e2e-plugin",
-      "name": "Catalog E2E Plugin",
-      "description": "Synthetic catalog plugin lifecycle fixture.",
-      "type": "plugin",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "4692d120e5b398fd7664c3d8e4a67362a8af7a7e",
-        "path": "packages/plugin/catalog-e2e/1.0.0",
-        "format": "codex"
-      },
-      "digest": "sha256:dfca1cbd4e2f8cbb91e55fa19dfc2166367b6894a2ee6686692efb0b93b27fed",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:39:44.822Z",
-      "pluginFormat": "codex",
-      "license": "MIT"
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/skill/catalog-e2e-skill",
-      "name": "Catalog E2E Skill",
-      "description": "Synthetic skill for catalog lifecycle validation.",
-      "type": "skill",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "ccb711b03d8f0d911491d34b990bf9f54fd50871",
-        "path": "packages/skill/catalog-e2e-skill/1.0.1",
-        "format": "auto"
-      },
-      "digest": "sha256:e78cf9accc474150e33c31ecfcede320ade8b1088b967958654f56cd9cbd0b39",
-      "version": "1.0.1",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:40:47.508Z",
-      "license": "MIT"
     },
     {
       "id": "find-skills",
@@ -382,46 +281,6 @@
         "path": "free/skills/tdd",
         "format": "auto"
       }
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/theme/catalog-e2e-theme",
-      "name": "Catalog E2E Theme",
-      "description": "Synthetic theme for catalog lifecycle validation.",
-      "type": "theme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "55ce20bf55db6bf43117bc8a01568da225bb0437",
-        "path": "packages/theme/catalog-e2e-theme/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:af5c34f8e5401aa925252250d4566710b1e28ed953f338e63a6fc590063581d1",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:11:31.750Z",
-      "license": "MIT"
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/theme/catalog-e2e-theme",
-      "name": "Catalog E2E Theme",
-      "description": "Synthetic theme updated accent for catalog lifecycle validation.",
-      "type": "theme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "80f757d44711e64e43ea35800fe631f0fa22b21c",
-        "path": "packages/theme/catalog-e2e-theme/1.0.1",
-        "format": "auto"
-      },
-      "digest": "sha256:f33c50719b1af636b3d6c0f8a8afeb09eaa85760e3941422b92758b28e97b764",
-      "version": "1.0.1",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:38:04.551Z",
-      "license": "MIT"
     },
     {
       "id": "catppuccin-mocha",
@@ -583,46 +442,6 @@
         "path": "free/appearances/one-dark-pro",
         "format": "auto"
       }
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/tool/catalog-e2e-tool",
-      "name": "Catalog E2E Tool",
-      "description": "Synthetic HTTP tool for catalog lifecycle validation.",
-      "type": "tool",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "e422b32ede4d436dc363c8b704c823f330e6a90f",
-        "path": "packages/tool/catalog-e2e-tool/1.0.1",
-        "format": "auto"
-      },
-      "digest": "sha256:f631f370fc67cf41b5daae55b17738c7ad6bf27dd81d8afb1392948e01b89d51",
-      "version": "1.0.1",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:37:55.902Z",
-      "license": "MIT"
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/toolPack/catalog-e2e-pack",
-      "name": "Catalog E2E Pack",
-      "description": "Synthetic tool pack for catalog lifecycle validation.",
-      "type": "toolPack",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "98e55e35f7a74184e709975196238d1d2d367ab4",
-        "path": "packages/toolPack/catalog-e2e-pack/1.0.1",
-        "format": "auto"
-      },
-      "digest": "sha256:8b0faa00cc69324cb54ed3319cb3e4b8199878176c63eb854c9adb78cb88a3cd",
-      "version": "1.0.1",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:39:18.397Z",
-      "license": "MIT"
     }
   ]
 }

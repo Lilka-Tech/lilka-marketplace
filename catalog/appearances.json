@@ -1,29 +1,9 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-09-09T11:54:12.915Z",
-  "version": 21,
-  "commit": "74e6267a6606e50c09db6726b14498d7541e279d",
+  "generatedAt": "2026-09-09T12:13:07.878Z",
+  "version": 22,
+  "commit": "babec30ab7a188a7fc0f4eefb48718b8510850a7",
   "entries": [
-    {
-      "id": "Caleul/lilka-catalog-e2e/iconTheme/catalog-e2e-icons",
-      "name": "Catalog E2E Icons",
-      "description": "Synthetic icon catalog lifecycle fixture.",
-      "type": "iconTheme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "ce3a104202f289f8da0ee6570fc9fe2f73ddf40e",
-        "path": "packages/iconTheme/catalog-e2e/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:9607560ba083f8145bf866dcd23d66fde09489644d939385a4340b39999b7152",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:41:09.570Z",
-      "license": "MIT"
-    },
     {
       "id": "lilka-default-icons",
       "name": "Lilka Default Icons",
@@ -91,46 +71,6 @@
         "path": "free/appearances/vscode-icons",
         "format": "auto"
       }
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/theme/catalog-e2e-theme",
-      "name": "Catalog E2E Theme",
-      "description": "Synthetic theme for catalog lifecycle validation.",
-      "type": "theme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "55ce20bf55db6bf43117bc8a01568da225bb0437",
-        "path": "packages/theme/catalog-e2e-theme/1.0.0",
-        "format": "auto"
-      },
-      "digest": "sha256:af5c34f8e5401aa925252250d4566710b1e28ed953f338e63a6fc590063581d1",
-      "version": "1.0.0",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:11:31.750Z",
-      "license": "MIT"
-    },
-    {
-      "id": "Caleul/lilka-catalog-e2e/theme/catalog-e2e-theme",
-      "name": "Catalog E2E Theme",
-      "description": "Synthetic theme updated accent for catalog lifecycle validation.",
-      "type": "theme",
-      "source": {
-        "kind": "github",
-        "owner": "Caleul",
-        "repo": "lilka-catalog-e2e",
-        "ref": "80f757d44711e64e43ea35800fe631f0fa22b21c",
-        "path": "packages/theme/catalog-e2e-theme/1.0.1",
-        "format": "auto"
-      },
-      "digest": "sha256:f33c50719b1af636b3d6c0f8a8afeb09eaa85760e3941422b92758b28e97b764",
-      "version": "1.0.1",
-      "downloads": 0,
-      "tags": [],
-      "publishedAt": "2026-09-09T11:38:04.551Z",
-      "license": "MIT"
     },
     {
       "id": "catppuccin-mocha",
