@@ -379,8 +379,8 @@
       "name": "grill-me",
       "description": "Popular skill grill-me",
       "type": "skill",
-      "digest": "sha256:ef20337706ac97b01e569f801c2b870485ca42485fbdb2d8b8824927f171117f",
-      "version": "1.0.0",
+      "digest": "sha256:bcb2e3b6f8f7d5c8dbc433b110acd6673d61a948199a025ff7259f46a46676e2",
+      "version": "1.0.1",
       "downloads": 999200,
       "tags": [
         "requirements",
@@ -392,7 +392,7 @@
         "kind": "github",
         "owner": "Lilka-Tech",
         "repo": "lilka-packages",
-        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
         "path": "free/skills/grill-me",
         "format": "auto"
       }
@@ -402,8 +402,8 @@
       "name": "improve-codebase-architecture",
       "description": "Popular skill improve-codebase-architecture",
       "type": "skill",
-      "digest": "sha256:ed197e8c4b721951d7a8215b9a5685c101f7ea6475b4328f23cb279f29850d7b",
-      "version": "1.0.0",
+      "digest": "sha256:e62a6013cc8243555300d45d041cf515ebbd2f27a71d3fe6b607e06bdbdd1d18",
+      "version": "1.0.1",
       "downloads": 819100,
       "tags": [
         "architecture",
@@ -415,7 +415,7 @@
         "kind": "github",
         "owner": "Lilka-Tech",
         "repo": "lilka-packages",
-        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
         "path": "free/skills/improve-codebase-architecture",
         "format": "auto"
       }
@@ -425,8 +425,8 @@
       "name": "tdd",
       "description": "Popular skill tdd",
       "type": "skill",
-      "digest": "sha256:2ccf18d12897c13998e12d3e757258730cbe7e2e515bec863ac22c74830adb51",
-      "version": "1.0.0",
+      "digest": "sha256:3cc817a9c560a955be8931966cef9150b49b2eeb6931c0f178275b2526dbe3d7",
+      "version": "1.0.1",
       "downloads": 791800,
       "tags": [
         "testing",
@@ -438,7 +438,7 @@
         "kind": "github",
         "owner": "Lilka-Tech",
         "repo": "lilka-packages",
-        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
         "path": "free/skills/tdd",
         "format": "auto"
       }
