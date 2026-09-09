@@ -1,5 +1,9 @@
 name: Publish signed marketplace metadata
 on:
+  pull_request:
+    types: [closed]
+    paths:
+      - 'catalog/**'
   workflow_dispatch:
   schedule:
     - cron: '17 6 * * *'
@@ -10,6 +14,7 @@ permissions:
   contents: write
 jobs:
   publish:
+    if: github.event_name != 'pull_request' || github.event.pull_request.merged == true
     environment: marketplace-production
     runs-on: ubuntu-24.04
     steps:
