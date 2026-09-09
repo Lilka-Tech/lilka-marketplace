@@ -1,1 +1,105 @@
-{"$schema":"https://json-schema.org/draft/2020-12/schema","$id":"https://lilka.dev/schemas/marketplace-package-v1.json","type":"object","required":["schemaVersion","id","type","name","version","license","digest"],"properties":{"schemaVersion":{"const":1},"id":{"type":"string","pattern":"^[a-z0-9][a-z0-9._-]+$"},"type":{"enum":["agent","agency","skill","appearance"]},"name":{"type":"string","minLength":1,"maxLength":200},"version":{"type":"string","minLength":1,"maxLength":100},"license":{"type":"string","minLength":1},"digest":{"type":"string","pattern":"^sha256:[a-f0-9]{64}$"},"permissions":{"type":"object"}},"additionalProperties":true}
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lilka.dev/schemas/marketplace-entry-v2.json",
+  "title": "Reference-only Marketplace entry",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "type",
+    "source",
+    "digest",
+    "version",
+    "publishedAt"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "string"
+    },
+    "license": {
+      "type": "string"
+    },
+    "type": {
+      "enum": [
+        "agent",
+        "agency",
+        "skill",
+        "theme",
+        "iconTheme",
+        "plugin",
+        "tool",
+        "toolPack"
+      ]
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "kind",
+        "owner",
+        "repo",
+        "ref",
+        "path",
+        "format"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "const": "github"
+        },
+        "owner": {
+          "type": "string"
+        },
+        "repo": {
+          "type": "string"
+        },
+        "ref": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{40}$"
+        },
+        "path": {
+          "type": "string"
+        },
+        "format": {
+          "enum": [
+            "auto",
+            "claude",
+            "codex"
+          ]
+        }
+      }
+    },
+    "digest": {
+      "type": "string",
+      "pattern": "^sha256:[a-f0-9]{64}$"
+    },
+    "downloads": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "pluginFormat": {
+      "enum": [
+        "codex",
+        "claude"
+      ]
+    }
+  },
+  "additionalProperties": false
+}

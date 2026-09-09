@@ -1,6 +1,11 @@
 name: Publish signed marketplace metadata
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '17 6 * * *'
+concurrency:
+  group: marketplace-metadata-publication
+  cancel-in-progress: false
 permissions:
   contents: write
 jobs:
@@ -22,6 +27,7 @@ jobs:
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22
+      - run: npm test
       - run: npm run validate
       - run: npm run publish:metadata
         env:

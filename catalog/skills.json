@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "generatedAt": "2026-09-09T10:52:52.952Z",
   "version": 7,
   "commit": "f2b82df9ff621ca821e5c7807e9cd9c2404e475e",
@@ -9,10 +9,7 @@
       "name": "find-skills",
       "description": "Popular skill find-skills",
       "type": "skill",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/skills/find-skills",
-      "commit": "f2b82df9ff621ca821e5c7807e9cd9c2404e475e",
-      "digest": "sha256:daf05dace491a209544f40c2aa32610fb1d949d9f9a728a2641a29bf6dac1d89",
+      "digest": "sha256:52b4e2205e43f4c03fb46915941d575cc49c26526a5e6c21b1e1472828623677",
       "version": "1.0.0",
       "downloads": 3200000,
       "tags": [
@@ -20,17 +17,22 @@
         "discovery",
         "popular"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-packages",
+        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "path": "free/skills/find-skills",
+        "format": "auto"
+      }
     },
     {
       "id": "grill-me",
       "name": "grill-me",
       "description": "Popular skill grill-me",
       "type": "skill",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/skills/grill-me",
-      "commit": "f2b82df9ff621ca821e5c7807e9cd9c2404e475e",
-      "digest": "sha256:e6354c8304eb930ffcc508886a9c1f5b6ce009ffa4eb11744442f4e0059166a0",
+      "digest": "sha256:ef20337706ac97b01e569f801c2b870485ca42485fbdb2d8b8824927f171117f",
       "version": "1.0.0",
       "downloads": 999200,
       "tags": [
@@ -38,17 +40,22 @@
         "clarification",
         "popular"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-packages",
+        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "path": "free/skills/grill-me",
+        "format": "auto"
+      }
     },
     {
       "id": "improve-codebase-architecture",
       "name": "improve-codebase-architecture",
       "description": "Popular skill improve-codebase-architecture",
       "type": "skill",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/skills/improve-codebase-architecture",
-      "commit": "f2b82df9ff621ca821e5c7807e9cd9c2404e475e",
-      "digest": "sha256:4e54b38a3cc20714c657157cd81af2b607ff1e7f6220b0f3ac35b6e0793c7cb8",
+      "digest": "sha256:ed197e8c4b721951d7a8215b9a5685c101f7ea6475b4328f23cb279f29850d7b",
       "version": "1.0.0",
       "downloads": 819100,
       "tags": [
@@ -56,17 +63,22 @@
         "codebase",
         "popular"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-packages",
+        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "path": "free/skills/improve-codebase-architecture",
+        "format": "auto"
+      }
     },
     {
       "id": "tdd",
       "name": "tdd",
       "description": "Popular skill tdd",
       "type": "skill",
-      "repository": "Lilka-Tech/lilka-marketplace",
-      "path": "packages/free/skills/tdd",
-      "commit": "f2b82df9ff621ca821e5c7807e9cd9c2404e475e",
-      "digest": "sha256:5da3912cf80fcc8fb535b50033622a16ac2509bb04c2a01809b5f40f380abddb",
+      "digest": "sha256:2ccf18d12897c13998e12d3e757258730cbe7e2e515bec863ac22c74830adb51",
       "version": "1.0.0",
       "downloads": 791800,
       "tags": [
@@ -74,7 +86,15 @@
         "tdd",
         "popular"
       ],
-      "publishedAt": "2026-08-29T00:00:00.000Z"
+      "publishedAt": "2026-08-29T00:00:00.000Z",
+      "source": {
+        "kind": "github",
+        "owner": "Lilka-Tech",
+        "repo": "lilka-packages",
+        "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+        "path": "free/skills/tdd",
+        "format": "auto"
+      }
     }
   ]
 }
