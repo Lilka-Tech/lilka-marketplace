@@ -1,0 +1,23 @@
+{
+  "id": "general-assistant",
+  "name": "General Assistant",
+  "description": "A versatile assistant for planning, writing, analysis, and structured deliverables.",
+  "type": "agent",
+  "digest": "sha256:53790f224152d808e3bbf82c181129b5bb5e0e131e986207f5d3a7ae1a3efbbc",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "starter",
+    "general",
+    "assistant"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/agents/general-assistant",
+    "format": "auto"
+  }
+}

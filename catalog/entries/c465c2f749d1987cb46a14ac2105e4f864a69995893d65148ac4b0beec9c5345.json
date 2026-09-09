@@ -1,0 +1,23 @@
+{
+  "id": "lilka-medium-light-theme",
+  "name": "Lilka Medium Light",
+  "description": "Medium-light Lilka appearance theme built from calm gray surfaces and graphite accents.",
+  "type": "theme",
+  "digest": "sha256:8f52028269db37aec81e6595298244e09619d78300e2dcb135e17331e1b19185",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "lilka",
+    "theme",
+    "light"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/lilka-medium-light-theme",
+    "format": "auto"
+  }
+}

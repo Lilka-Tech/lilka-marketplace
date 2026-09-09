@@ -1,0 +1,23 @@
+{
+  "id": "tdd",
+  "name": "tdd",
+  "description": "Popular skill tdd",
+  "type": "skill",
+  "digest": "sha256:3cc817a9c560a955be8931966cef9150b49b2eeb6931c0f178275b2526dbe3d7",
+  "version": "1.0.1",
+  "downloads": 791800,
+  "tags": [
+    "testing",
+    "tdd",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
+    "path": "free/skills/tdd",
+    "format": "auto"
+  }
+}

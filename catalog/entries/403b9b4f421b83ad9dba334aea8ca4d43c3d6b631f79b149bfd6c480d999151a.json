@@ -1,0 +1,23 @@
+{
+  "id": "find-skills",
+  "name": "find-skills",
+  "description": "Popular skill find-skills",
+  "type": "skill",
+  "digest": "sha256:52b4e2205e43f4c03fb46915941d575cc49c26526a5e6c21b1e1472828623677",
+  "version": "1.0.0",
+  "downloads": 3200000,
+  "tags": [
+    "skills",
+    "discovery",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/skills/find-skills",
+    "format": "auto"
+  }
+}

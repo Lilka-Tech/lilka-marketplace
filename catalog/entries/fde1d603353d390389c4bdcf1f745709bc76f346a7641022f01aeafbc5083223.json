@@ -1,0 +1,23 @@
+{
+  "id": "lilka-dark-theme",
+  "name": "Solarized",
+  "description": "Solarized Lilka appearance theme with a warm dark surface and violet accents.",
+  "type": "theme",
+  "digest": "sha256:32113321f026621c6e41a69ba9a505f4f9c8d9afacc5387627bcd21cb7211121",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "lilka",
+    "theme",
+    "dark"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/lilka-dark-theme",
+    "format": "auto"
+  }
+}

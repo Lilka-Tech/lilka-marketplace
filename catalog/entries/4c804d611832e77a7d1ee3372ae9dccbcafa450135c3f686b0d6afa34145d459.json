@@ -1,0 +1,23 @@
+{
+  "id": "vscode-icons",
+  "name": "vscode-icons",
+  "description": "Popular MIT-licensed icon theme adapted for Lilka from vscode-icons/vscode-icons.",
+  "type": "iconTheme",
+  "digest": "sha256:d172cf7215edf35068eee42d450ab93b7180bf063f2ceb9b1524b031337a98a3",
+  "version": "1.0.0",
+  "downloads": 5132,
+  "tags": [
+    "icons",
+    "files",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/vscode-icons",
+    "format": "auto"
+  }
+}

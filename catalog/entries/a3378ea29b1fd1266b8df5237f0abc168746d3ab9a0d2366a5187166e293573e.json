@@ -1,0 +1,23 @@
+{
+  "id": "grill-me",
+  "name": "grill-me",
+  "description": "Popular skill grill-me",
+  "type": "skill",
+  "digest": "sha256:bcb2e3b6f8f7d5c8dbc433b110acd6673d61a948199a025ff7259f46a46676e2",
+  "version": "1.0.1",
+  "downloads": 999200,
+  "tags": [
+    "requirements",
+    "clarification",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
+    "path": "free/skills/grill-me",
+    "format": "auto"
+  }
+}

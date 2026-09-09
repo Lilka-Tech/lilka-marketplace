@@ -1,0 +1,23 @@
+{
+  "id": "dracula",
+  "name": "Dracula",
+  "description": "The popular Dracula dark palette adapted for Lilka.",
+  "type": "theme",
+  "digest": "sha256:fcdb5eddfe07db9a0a6776a99731ee1c1d9d2401d2b62f06054c44ac07d2e325",
+  "version": "1.0.0",
+  "downloads": 880,
+  "tags": [
+    "theme",
+    "dark",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/dracula",
+    "format": "auto"
+  }
+}

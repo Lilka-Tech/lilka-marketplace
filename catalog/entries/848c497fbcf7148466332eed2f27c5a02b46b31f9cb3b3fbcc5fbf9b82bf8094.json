@@ -1,0 +1,23 @@
+{
+  "id": "lilka-light-theme",
+  "name": "Lilka Light",
+  "description": "Light Lilka appearance theme with crisp neutral surfaces and a focused lilac accent.",
+  "type": "theme",
+  "digest": "sha256:243389e2858ddfdf1dda4a8fa089823f0893acd9bafd0c4c3e4c50dc3fb9a16e",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "lilka",
+    "theme",
+    "light"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/lilka-light-theme",
+    "format": "auto"
+  }
+}

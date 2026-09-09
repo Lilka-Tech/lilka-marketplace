@@ -1,0 +1,23 @@
+{
+  "id": "one-dark-pro",
+  "name": "One Dark Pro",
+  "description": "The widely used One Dark Pro palette adapted for Lilka.",
+  "type": "theme",
+  "digest": "sha256:7e0cdc690eb5f2ad029552b4abb9a712f1c358e9d0d157cb6f444200953ab6a4",
+  "version": "1.0.0",
+  "downloads": 1781,
+  "tags": [
+    "theme",
+    "dark",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/one-dark-pro",
+    "format": "auto"
+  }
+}

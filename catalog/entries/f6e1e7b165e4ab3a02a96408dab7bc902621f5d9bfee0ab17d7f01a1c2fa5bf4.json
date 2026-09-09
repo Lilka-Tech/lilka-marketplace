@@ -1,0 +1,23 @@
+{
+  "id": "improve-codebase-architecture",
+  "name": "improve-codebase-architecture",
+  "description": "Popular skill improve-codebase-architecture",
+  "type": "skill",
+  "digest": "sha256:e62a6013cc8243555300d45d041cf515ebbd2f27a71d3fe6b607e06bdbdd1d18",
+  "version": "1.0.1",
+  "downloads": 819100,
+  "tags": [
+    "architecture",
+    "codebase",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "c21f82579fb65312d8e760cd73a5b464375c0170",
+    "path": "free/skills/improve-codebase-architecture",
+    "format": "auto"
+  }
+}

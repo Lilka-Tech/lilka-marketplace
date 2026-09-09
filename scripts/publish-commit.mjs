@@ -1,7 +1,7 @@
 import { readFile } from 'node:fs/promises';
 
 const token = process.env.LILKA_MARKETPLACE_APP_TOKEN;
-const expectedHeadOid = process.env.GITHUB_SHA;
+const expectedHeadOid = process.env.CATALOG_HEAD_SHA ?? process.env.GITHUB_SHA;
 if (!token) throw new Error('LILKA_MARKETPLACE_APP_TOKEN is required');
 if (!expectedHeadOid) throw new Error('GITHUB_SHA is required');
 

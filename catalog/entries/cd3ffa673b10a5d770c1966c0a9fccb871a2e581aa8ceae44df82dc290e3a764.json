@@ -1,0 +1,23 @@
+{
+  "id": "catppuccin-mocha",
+  "name": "Catppuccin Mocha",
+  "description": "The popular Catppuccin Mocha palette adapted for Lilka.",
+  "type": "theme",
+  "digest": "sha256:a95b7dbaf75bff8d548ee4595e7a8bdc08435b75b75d8cd506c9ae6004120d39",
+  "version": "1.0.0",
+  "downloads": 2247,
+  "tags": [
+    "theme",
+    "dark",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/catppuccin-mocha",
+    "format": "auto"
+  }
+}

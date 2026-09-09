@@ -1,0 +1,23 @@
+{
+  "id": "material-icon-theme",
+  "name": "Material Icon Theme",
+  "description": "Popular MIT-licensed icon theme adapted for Lilka from material-extensions/vscode-material-icon-theme.",
+  "type": "iconTheme",
+  "digest": "sha256:d23127b39920550d69451adecaf139fbae8e6fa33d906e67f8e6671a02f38451",
+  "version": "1.0.0",
+  "downloads": 2953,
+  "tags": [
+    "icons",
+    "material",
+    "popular"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/material-icon-theme",
+    "format": "auto"
+  }
+}

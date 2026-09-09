@@ -1,0 +1,24 @@
+{
+  "id": "conversation-titler",
+  "name": "Conversation Titler",
+  "description": "Creates concise, descriptive conversation titles when invoked by a Lilka trigger.",
+  "type": "agent",
+  "digest": "sha256:d736baf9e460c5be6f3ece8914ede6e48859bb30f596e08fc41efedab958b759",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "conversation",
+    "title",
+    "automation",
+    "trigger"
+  ],
+  "publishedAt": "2026-08-31T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/agents/conversation-titler",
+    "format": "auto"
+  }
+}

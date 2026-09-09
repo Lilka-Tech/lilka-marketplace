@@ -1,0 +1,23 @@
+{
+  "id": "lilka-default-theme",
+  "name": "Lilka Default",
+  "description": "Default Lilka appearance theme — deep charcoal surfaces, crisp zinc borders, and a vivid blue accent.",
+  "type": "theme",
+  "digest": "sha256:926576f2c3417051c19ceda5fa627284ca08abb1a58264765aabc782e8d85794",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "lilka",
+    "theme",
+    "dark"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/lilka-default-theme",
+    "format": "auto"
+  }
+}

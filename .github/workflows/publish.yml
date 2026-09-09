@@ -30,6 +30,8 @@ jobs:
         with:
           ref: main
           token: ${{ steps.app-token.outputs.token }}
+      - name: Capture checked out main for atomic publication
+        run: echo "CATALOG_HEAD_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
       - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
         with:
           node-version: 22

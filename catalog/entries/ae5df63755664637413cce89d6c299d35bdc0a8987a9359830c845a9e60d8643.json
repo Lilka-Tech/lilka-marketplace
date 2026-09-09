@@ -1,0 +1,23 @@
+{
+  "id": "task-development",
+  "name": "Task Development",
+  "description": "A context-first delivery workflow with planning, implementation, and a review gate that returns inconsistencies to planning.",
+  "type": "agency",
+  "digest": "sha256:d8036b78fcf1a6fe588d3c7e8d7be0ed9b9b4ac5012ee0b79ee6dd2ab23a35dc",
+  "version": "1.0.1",
+  "downloads": 0,
+  "tags": [
+    "starter",
+    "workflow",
+    "development"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "c7c84816dcf8be5a4f420339ff336d978163be9a",
+    "path": "free/agencies/task-development",
+    "format": "auto"
+  }
+}

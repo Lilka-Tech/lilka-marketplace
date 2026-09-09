@@ -1,0 +1,23 @@
+{
+  "id": "content-pipeline",
+  "name": "Content Pipeline",
+  "description": "A generic two-step workflow that researches a topic and delivers structured content.",
+  "type": "agency",
+  "digest": "sha256:4d2b03ead5121ee3ceefbd2df72d6a04c4715274c884e88956dd8b98389face3",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "starter",
+    "workflow",
+    "content"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/agencies/content-pipeline",
+    "format": "auto"
+  }
+}

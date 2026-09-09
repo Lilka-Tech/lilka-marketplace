@@ -1,0 +1,25 @@
+{
+  "id": "migration-assistant",
+  "name": "Migration Assistant",
+  "description": "Discovers and migrates agents, instructions, skills, and skill-based plugins from other coding-agent ecosystems into a Lilka project.",
+  "type": "agent",
+  "digest": "sha256:27550b820ce30ae3bb8a0d3c3baa2983e842b7fcec6b411992569d3aa0ac2eb6",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "migration",
+    "agents",
+    "skills",
+    "codex",
+    "claude"
+  ],
+  "publishedAt": "2026-08-31T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/agents/migration-assistant",
+    "format": "auto"
+  }
+}

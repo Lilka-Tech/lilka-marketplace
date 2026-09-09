@@ -1,0 +1,22 @@
+{
+  "id": "lilka-default-icons",
+  "name": "Lilka Default Icons",
+  "description": "Default Lilka file icon theme.",
+  "type": "iconTheme",
+  "digest": "sha256:4cd9351f20b7d4af4196c18ca27ad6f3d0194fd5b797cc3f430e8f0dd4c12c64",
+  "version": "1.0.0",
+  "downloads": 0,
+  "tags": [
+    "lilka",
+    "icons"
+  ],
+  "publishedAt": "2026-08-29T00:00:00.000Z",
+  "source": {
+    "kind": "github",
+    "owner": "Lilka-Tech",
+    "repo": "lilka-packages",
+    "ref": "ea52e2cd961a49d26d88242f35f1da1abf04bc80",
+    "path": "free/appearances/lilka-default-icons",
+    "format": "auto"
+  }
+}
