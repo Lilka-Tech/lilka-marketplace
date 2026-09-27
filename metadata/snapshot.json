@@ -1,28 +1,28 @@
 {
   "signed": {
     "schemaVersion": 1,
-    "version": 39,
-    "expiresAt": "2026-10-26T11:22:01.019Z",
+    "version": 40,
+    "expiresAt": "2026-10-27T11:59:10.889Z",
     "catalogs": {
       "index": {
-        "sha256": "17ca239a2b21ce97f180b7c5480b726769cbff31f1851d0028ed79ed7931b15d",
-        "version": 39
+        "sha256": "fb2fc6b747049ee7b7aadfc2f130e80cfe36a0ef1da92b0ec24ee4a0be5a01a3",
+        "version": 40
       },
       "agents": {
-        "sha256": "6c978e5031a58f6843cd3f1f9a6fe54ea12505af55f27e980a9f4958e37c4bcf",
-        "version": 39
+        "sha256": "a89793a8d09c35f27d049473ce26ef9aaeba35089691791342aa12a7ce612f9d",
+        "version": 40
       },
       "agencies": {
-        "sha256": "7ad7ee65ad314e4bc086a07a0dc76fdc539aef7eae365dcc71f7f48d7cfabd47",
-        "version": 39
+        "sha256": "b9dfd98044d8d8ff11cec7e6f84877d210af5f8685242bb679e9d357e5d918bf",
+        "version": 40
       },
       "skills": {
-        "sha256": "96fb3878039d6bf14259e2b09d620916111e00936ca904a6421724c50fb1f6bf",
-        "version": 39
+        "sha256": "cb3b7521867fc838d05a34398bff46b384bb260487f7ebb488e7cf3841586835",
+        "version": 40
       },
       "appearances": {
-        "sha256": "141cd8b8d36646d72cb3a689fd31df5707ab4c4a6565e2ea5e188f9ef8e5d974",
-        "version": 39
+        "sha256": "a6a4ff1662484b8269ebef4ecfbdda48224e2d74d358ecfe4b7071ec6b28bdfe",
+        "version": 40
       }
     }
   },
@@ -30,7 +30,7 @@
     {
       "keyid": "root-1",
       "algorithm": "EdDSA",
-      "signature": "7sCyUKxq5Y0QOHrhmaEQpn6aLwTc6mmKMrG5K-dJGF--Frsx0i4ccPPIGHAjEwDLa-9eXe_onOjzqTwnICScDQ"
+      "signature": "1AZfPWLAMTQMUvagEb0aY7_uBPP3FEbSdFdf-Ook4Fb_zbKrfagCGZBQ3Hj9SLiiWgc8wIXP3eBgBp-WYt46BQ"
     }
   ]
 }
