@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-05T14:32:52.038Z",
-  "version": 48,
-  "commit": "fdbbfb3d6b5023e2214a2d50523cc6795f874a88",
+  "generatedAt": "2026-10-06T13:16:11.244Z",
+  "version": 49,
+  "commit": "9827db315f14e9d706f19d77ccb9a208ab675669",
   "entries": [
     {
       "id": "find-skills",
