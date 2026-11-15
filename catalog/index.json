@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-11-14T13:28:06.697Z",
-  "version": 88,
-  "commit": "a2969092f3e0222e9b2d562952d57a4e82b0a05f",
+  "generatedAt": "2026-11-15T13:53:51.756Z",
+  "version": 89,
+  "commit": "66e7644a0af5f49c9669ea8d520a0dd64a1dd508",
   "entries": [
     {
       "id": "content-pipeline",
