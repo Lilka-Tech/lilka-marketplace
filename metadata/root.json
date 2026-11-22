@@ -2,7 +2,7 @@
   "signed": {
     "schemaVersion": 1,
     "version": 1,
-    "expiresAt": "2027-11-22T14:36:28.354Z",
+    "expiresAt": "2027-11-23T14:30:47.480Z",
     "keys": {
       "root-1": {
         "crv": "Ed25519",
@@ -16,7 +16,7 @@
     {
       "keyid": "root-1",
       "algorithm": "EdDSA",
-      "signature": "rGqycsIDbx-EecNuFGCuMGNUwztQV1u9T33nqvbsJbC05BD_tuVuRTpZGw7T3wxDtz0esdDnubRdaKOd-4qTCw"
+      "signature": "EBtEMGT-QbAt56bqaxl_AfE9_jCAIpvaC0PfY-58aaY1Kv9CFVRf-NEBqYrn0lpw30OEd5vb6CswCLBHPR0eAg"
     }
   ]
 }
